@@ -1,33 +1,41 @@
 
 /**
- * Write a description of class Elf here.
+ * Elf, min strength 5-max strength 18, min hp 10-max hp 30.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Erik Cooke)
+ * @version (2019.11.05)
  */
 public class Elf extends Creature
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private static final int MIN_ELF_STR = 5;
+    private static final int MAX_ELF_STR = 18;
+    private static final int MIN_ELF_HP = 10;
+    private static final int MAX_ELF_HP = 30;
 
     /**
      * Constructor for objects of class Elf
      */
     public Elf()
     {
-        // initialise instance variables
-        x = 0;
+        super(
+            Randomizer.nextInt(MAX_ELF_STR - MIN_ELF_STR + 1) + MIN_ELF_STR,
+            Randomizer.nextInt(MAX_ELF_HP - MIN_ELF_HP + 1) + MIN_ELF_HP
+            );
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Elf damage generator. 10% change to do magical damage(2x damage)
      */
-    public int sampleMethod(int y)
+    public int damage(int y)
     {
-        // put your code here
-        return x + y;
+        if(Randomizer.nextInt(10) == 0)
+        {
+            return (Randomizer.nextInt(strength) + 1) * 2;
+        }
+        else
+        {
+            return Randomizer.nextInt(strength) + 1;
+        }
     }
 }

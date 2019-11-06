@@ -9,7 +9,7 @@ import java.util.Random;
 public class Creature
 {
    private int hp;
-   private int strength;
+   protected int strength;
    
    public Creature(){
        hp = 10;
@@ -37,8 +37,7 @@ public class Creature
     * @return int - the amount of damage this creature did
     */
    public int damage(){
-       Random rand = new Random();
-       return rand.nextInt(strength) + 1;
+       return Randomizer.nextInt(strength) + 1;
    }
    
    /**

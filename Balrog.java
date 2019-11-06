@@ -1,33 +1,38 @@
 
 /**
- * Write a description of class Balrog here.
+ * Balrog, min strength 50-max strength 100, min hp 80-max hp 200.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Erik Cooke)
+ * @version (2019.11.05)
  */
 public class Balrog extends Demon
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private static final int MIN_BALROG_STR = 50;
+    private static final int MAX_BALROG_STR = 100;
+    private static final int MIN_BALROG_HP = 80;
+    private static final int MAX_BALROG_HP = 200;
 
     /**
      * Constructor for objects of class Balrog
      */
     public Balrog()
     {
-        // initialise instance variables
-        x = 0;
+        super(
+            Randomizer.nextInt(MAX_BALROG_STR - MIN_BALROG_STR + 1) + MIN_BALROG_STR,
+            Randomizer.nextInt(MAX_BALROG_HP - MIN_BALROG_HP + 1) + MIN_BALROG_HP
+        );
     }
 
     /**
      * An example of a method - replace this comment with your own
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @return int The amount of damage inflicted
      */
-    public int sampleMethod(int y)
+    public int damage()
     {
-        // put your code here
-        return x + y;
+        
+        return (Randomizer.nextInt(strength) + 1) + (Randomizer.nextInt(strength) + 1);
+
     }
 }
