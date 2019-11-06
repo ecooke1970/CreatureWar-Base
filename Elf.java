@@ -26,8 +26,9 @@ public class Elf extends Creature
     
     /**
      * Elf damage generator. 10% change to do magical damage(2x damage)
+     * @return int The amount of damage this creature inflicted
      */
-    public int damage(int y)
+    public int damage()
     {
         if(Randomizer.nextInt(10) == 0)
         {
