@@ -23,4 +23,9 @@ public class Human extends Creature
             Randomizer.nextInt(MAX_HUMAN_HP - MIN_HUMAN_HP + 1) + MIN_HUMAN_HP
         );            
     }
+    
+    // public boolean isAlive()
+    // {
+        // return super.isAlive();
+    // }
 }

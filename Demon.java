@@ -41,4 +41,9 @@ public class Demon extends Creature
             return Randomizer.nextInt(strength) + 1;
         }
     }
+    
+    // public boolean isAlive()
+    // {
+        // return super.isAlive();
+    // }
 }

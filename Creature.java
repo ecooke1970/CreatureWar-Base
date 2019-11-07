@@ -48,5 +48,18 @@ public class Creature
    {
        return hp > 0;
    }
+   
+   /**
+    * 
+    */
+   public void takeDamage(int damage)
+   {
+       hp -= damage;
+    }
+    
+    public boolean isDead()
+    {
+        return hp <= 0;
+    }
     
 }
