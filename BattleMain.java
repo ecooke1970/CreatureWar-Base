@@ -19,27 +19,27 @@ public class BattleMain
     public BattleMain()
     {
         armySize = 100;
-        ArrayList<Creature> army1 = new ArrayList<Creature>(armySize);
-        ArrayList<Creature> army2 = new ArrayList<Creature>(armySize);
+        army1 = new ArrayList<Creature>(armySize);
+        army2 = new ArrayList<Creature>(armySize);
     }
     
     public BattleMain(int armySize)
     {
-        Creature[] army1 = new Creature[armySize];
-        Creature[] army2 = new Creature[armySize];
+        this.armySize = armySize;
+        army1 = new ArrayList<Creature>(armySize);
+        army2 = new ArrayList<Creature>(armySize);
     }
     
-    // public static void main(String args[])
-    // {
-        // BattleMain war = new BattleMain();        
-        // war.run();
-    // }
+    public static void main(String args[])
+    {
+        BattleMain war = new BattleMain();        
+        war.run();
+    }
     
     public void run()
-    {
-        //createArmy(army1);
-        createArmy1();
-        //createArmy(army2);
+    {        
+        createArmy(army1);
+        createArmy(army2);
         System.out.println(battle(army1, army2));
     }
 
@@ -49,7 +49,7 @@ public class BattleMain
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void createArmy1()
+    public void createArmy(ArrayList army)
     {
         int i = 0;
         while(i < armySize)
@@ -58,28 +58,23 @@ public class BattleMain
             switch(x){
                 
                 case 0:
-                    Human human1 = new Human();
-                    army1.add(human1);
+                    army.add(new Human());
                     break;
                     
                 case 1:
-                    Elf elf1 = new Elf();
-                    army1.add(elf1);
+                    army.add(new Elf());
                     break;
                     
                 case 2:
-                    Demon demon1 = new Demon();
-                    army1.add(demon1);
+                    army.add(new Demon());
                     break;
                     
                 case 3:
-                    Cyberdemon cyberdemon1 = new Cyberdemon();
-                    army1.add(cyberdemon1);
+                    army.add(new Cyberdemon());
                     break;
                     
                 case 4:
-                    Balrog balrog1 = new Balrog();
-                    army1.add(balrog1);
+                    army.add(new Balrog());
                     break;
             }
             i++;
@@ -90,29 +85,34 @@ public class BattleMain
     {
         int index1 = 0;
         int index2 = 0;
+        int army1BattlesWon = 0;
+        int army2BattlesWon = 0;
         String winner = "";
         while(index1 < army1.size() && index2 < army2.size())
         {
             army1.get(index1).takeDamage(army2.get(index2).damage());
             if(army1.get(index1).isDead())
             {
+                army2BattlesWon ++;
                 if(index1 == army1.size() -1)
                 {
-                    winner = "Army2 is the winner";
+                    winner = "Army 2 is the winner";
+                    index1++;
+                    continue;
                 }
                 index1 ++;
-                continue;
             }
             army2.get(index2).takeDamage(army1.get(index1).damage());
             if(army2.get(index2).isDead())
             {
+                army1BattlesWon ++;
                 if(index2 == army2.size() -1)
                 {
-                    winner = "Army1 is the winner";
+                    winner = "Army 1 is the winner";
                 }
                 index2 ++;
             }
         }
-        return winner;
+        return "Army 1 battles won: " + army1BattlesWon + "\nArmy 2 battles won: " + army2BattlesWon + "\n" + winner;
     }
 }

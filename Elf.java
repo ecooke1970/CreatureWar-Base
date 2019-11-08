@@ -39,9 +39,5 @@ public class Elf extends Creature
             return Randomizer.nextInt(strength) + 1;
         }
     }
-    
-    // public boolean isAlive()
-    // {
-        // return super.isAlive();
-    // }
+
 }

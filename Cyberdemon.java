@@ -23,9 +23,4 @@ public class Cyberdemon extends Demon
             Randomizer.nextInt(MAX_CYBERDEMON_HP - MIN_CYBERDEMON_HP + 1) + MIN_CYBERDEMON_HP
             );
     }
-    
-    // public boolean isAlive()
-    // {
-        // return super.isAlive();
-    // }
 }

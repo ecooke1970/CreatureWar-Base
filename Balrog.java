@@ -35,9 +35,4 @@ public class Balrog extends Demon
         return (Randomizer.nextInt(strength) + 1) + (Randomizer.nextInt(strength) + 1);
 
     }
-    
-    // public boolean isAlive()
-    // {
-        // return super.isAlive();
-    // }
 }

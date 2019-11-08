@@ -57,7 +57,9 @@ public class Creature
        hp -= damage;
     }
     
-    public boolean isDead()
+    /**
+     * 
+     */public boolean isDead()
     {
         return hp <= 0;
     }
