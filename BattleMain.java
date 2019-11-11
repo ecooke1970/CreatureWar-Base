@@ -112,7 +112,7 @@ public class BattleMain
                 army2BattlesWon ++;
                 if(index1 == army1.size() -1)
                 {
-                    winner = "Army 2 is the winner";
+                    winner = "* Army 2 is the winner *";
                     index1++;
                     continue;
                 }
@@ -124,12 +124,12 @@ public class BattleMain
                 army1BattlesWon ++;
                 if(index2 == army2.size() -1)
                 {
-                    winner = "*Army 1 is the winner*";
+                    winner = "* Army 1 is the winner *";
                 }
                 index2 ++;
             }
         }
         return "\nArmy 1 battles won: " + army1BattlesWon + "\nArmy 2 battles won: " + army2BattlesWon + "\n\n" +
-               "**********************\n" + winner + "\n**********************";
+               "************************\n" + winner + "\n************************";
     }
 }

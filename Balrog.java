@@ -29,8 +29,6 @@ public class Balrog extends Demon
      */
     public int damage()
     {
-        
         return (Randomizer.nextInt(strength) + 1) + (Randomizer.nextInt(strength) + 1);
-
     }
 }

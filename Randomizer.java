@@ -9,6 +9,7 @@ import java.util.Random;
 public class Randomizer
 {
     private static Random rand;
+    
     /**
      * Constructor for objects of class Randomizer
      */
