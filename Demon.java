@@ -1,4 +1,3 @@
-
 /**
  * Demon, 5% chance to do magic damage(+50)
  *

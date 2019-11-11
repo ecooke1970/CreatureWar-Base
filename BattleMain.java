@@ -8,6 +8,7 @@ import java.util.ArrayList;
  */
 public class BattleMain
 {
+    Randomizer rand = new Randomizer();
     private ArrayList<Creature> army1;
     private ArrayList<Creature> army2;
     private int armySize;
@@ -64,7 +65,7 @@ public class BattleMain
         int i = 0;
         while(i < armySize)
         {
-            int x = Randomizer.nextInt(4);
+            int x = rand.nextInt(4);
             switch(x){
                 
                 case 0:
