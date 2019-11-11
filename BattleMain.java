@@ -64,7 +64,7 @@ public class BattleMain
         int i = 0;
         while(i < armySize)
         {
-            int x = Randomizer.nextInt(5);
+            int x = Randomizer.nextInt(4);
             switch(x){
                 
                 case 0:
@@ -76,14 +76,10 @@ public class BattleMain
                     break;
                     
                 case 2:
-                    army.add(new Demon());
-                    break;
-                    
-                case 3:
                     army.add(new Cyberdemon());
                     break;
                     
-                case 4:
+                case 3:
                     army.add(new Balrog());
                     break;
             }

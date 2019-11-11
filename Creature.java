@@ -9,7 +9,7 @@ import java.util.Random;
 public abstract class Creature
 {
    private int hp;
-   protected int strength;
+   private int strength;
    
    /**
     * Constructor for the class Creature
@@ -17,8 +17,7 @@ public abstract class Creature
    public Creature(){
        hp = 10;
        strength = 10;
-   }
-   
+   }   
    
    /**
     * Constructor for Creature taking int for strength and hit points

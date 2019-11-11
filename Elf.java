@@ -31,11 +31,11 @@ public class Elf extends Creature
     {
         if(Randomizer.nextInt(10) == 0)
         {
-            return (Randomizer.nextInt(strength) + 1) * 2;
+            return super.damage() * 2;
         }
         else
         {
-            return Randomizer.nextInt(strength) + 1;
+            return super.damage();
         }
     }
 }

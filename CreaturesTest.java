@@ -43,7 +43,6 @@ public class CreaturesTest
     {
         Human human1 = new Human();
         Elf elf1 = new Elf();
-        Demon demon1 = new Demon();
         Cyberdemon cyberdem1 = new Cyberdemon();
         Balrog balrog1 = new Balrog();
     }

@@ -5,7 +5,7 @@
  * @author (Erik Cooke)
  * @version (2019.11.05)
  */
-public class Demon extends Creature
+public abstract class Demon extends Creature
 {
     /**
      * Constructor for objects of class Demon
@@ -34,11 +34,11 @@ public class Demon extends Creature
     {
         if(Randomizer.nextInt(20) == 0)
         {
-            return Randomizer.nextInt(strength) + 51;
+            return super.damage() + 50;
         }
         else
         {
-            return Randomizer.nextInt(strength) + 1;
+            return super.damage();
         }
     }
 }
