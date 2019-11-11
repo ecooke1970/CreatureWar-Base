@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Write a description of class Randomizer here.
+ * Class to generate random numbers
  *
  * @author (Erik Cooke)
  * @version (2019.11.05)
@@ -9,7 +9,6 @@ import java.util.Random;
 public class Randomizer
 {
     private static Random rand;
-
     /**
      * Constructor for objects of class Randomizer
      */
@@ -19,10 +18,10 @@ public class Randomizer
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Generate a random int
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param y - Exclusive upper limit of random number range
+     * @return int - The random number that was generated
      */
     public static int nextInt(int y)
     {

@@ -1,14 +1,12 @@
 
 /**
- * Write a description of class Demon here.
+ * Demon, 5% chance to do magic damage(+50)
  *
  * @author (Erik Cooke)
  * @version (2019.11.05)
  */
 public class Demon extends Creature
 {
-
-
     /**
      * Constructor for objects of class Demon
      */
@@ -19,6 +17,8 @@ public class Demon extends Creature
     
     /**
      * Constructor for objects of class Demon
+     * @param str - number to set str to
+     * @param hp - number to set hp to
      */
     public Demon(int str, int hp)
     {
@@ -26,7 +26,7 @@ public class Demon extends Creature
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Demon damage generator. 5% chance to do magical damage, +50 to damage.
      * 
      * @return int amount of damage inflicted.
      */
@@ -41,5 +41,4 @@ public class Demon extends Creature
             return Randomizer.nextInt(strength) + 1;
         }
     }
-
 }

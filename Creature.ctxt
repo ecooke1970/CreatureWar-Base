@@ -1,19 +1,22 @@
 #BlueJ class context
 comment0.target=Creature
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Creature\ here.\r\n\ \r\n\ @author\ (Erik\ Cooke)\ \r\n\ @version\ (2019.11.05)\r\n
+comment0.text=\r\n\ A\ generic\ Creature,\ also\ the\ superclass\ for\ several\ different\ creatures\r\n\ \r\n\ @author\ (Erik\ Cooke)\ \r\n\ @version\ (2019.11.05)\r\n
 comment1.params=
 comment1.target=Creature()
+comment1.text=\r\n\ Constructor\ for\ the\ class\ Creature\r\n
 comment2.params=strength\ hp
 comment2.target=Creature(int,\ int)
+comment2.text=\r\n\ Constructor\ for\ Creature\ taking\ int\ for\ strength\ and\ hit\ points\r\n\ @param\ strength\ amount\ to\ set\ strength\ to\r\n\ @param\ hp\ amount\ to\ set\ hp\ to\r\n
 comment3.params=
 comment3.target=int\ damage()
-comment3.text=\r\n\ How\ much\ damage\r\n\ @return\ int\ -\ the\ amount\ of\ damage\ this\ creature\ did\r\n
+comment3.text=\r\n\ How\ much\ damage\r\n\ @return\ int\ -\ the\ amount\ of\ damage\ this\ creature\ inflicted\r\n
 comment4.params=
 comment4.target=boolean\ isAlive()
 comment4.text=\r\n\ Is\ this\ creature\ still\ alive?\r\n\ @return\ boolean\r\n
 comment5.params=damage
 comment5.target=void\ takeDamage(int)
-comment5.text=\r\n\ \r\n
+comment5.text=\r\n\ How\ much\ has\ this\ creature\ been\ damaged\r\n\ @param\ damage\ amount\ to\ inflict\ on\ this\ creature\r\n
 comment6.params=
 comment6.target=boolean\ isDead()
+comment6.text=\r\n\ Is\ this\ creature\ dead\r\n\ @return\ boolean\r\n
 numComments=7

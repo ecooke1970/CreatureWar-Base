@@ -1,4 +1,3 @@
-
 /**
  * Balrog, min strength 50-max strength 100, min hp 80-max hp 200.
  *
@@ -7,7 +6,6 @@
  */
 public class Balrog extends Demon
 {
-    // instance variables - replace the example below with your own
     private static final int MIN_BALROG_STR = 50;
     private static final int MAX_BALROG_STR = 100;
     private static final int MIN_BALROG_HP = 80;
@@ -25,7 +23,7 @@ public class Balrog extends Demon
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Balrog damage generator. Attacks twice each round.
      *
      * @return int The amount of damage inflicted
      */

@@ -1,20 +1,19 @@
 import java.util.ArrayList;
 
 /**
- * Write a description of class BattleMain here.
+ * The main class for this program.  Responsible for creating two armies and then making them battle.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Erik Cooke)
+ * @version (2019.11.7)
  */
 public class BattleMain
 {
-    // instance variables - replace the example below with your own
     private ArrayList<Creature> army1;
     private ArrayList<Creature> army2;
     private int armySize;
 
     /**
-     * Constructor for objects of class BattleMain
+     * Constructor for objects of class BattleMain. Defaults to 100 army size
      */
     public BattleMain()
     {
@@ -23,6 +22,10 @@ public class BattleMain
         army2 = new ArrayList<Creature>(armySize);
     }
     
+    /**
+     * Constructor for objects of class BattleMain
+     * @param armySize what size should the 2 armies be?
+     */
     public BattleMain(int armySize)
     {
         this.armySize = armySize;
@@ -30,12 +33,20 @@ public class BattleMain
         army2 = new ArrayList<Creature>(armySize);
     }
     
+    /**
+     * main method
+     * @param args
+     */
     public static void main(String args[])
     {
         BattleMain war = new BattleMain();        
         war.run();
     }
     
+    /**
+     * Creates the 2 armies and then makes them battle.
+     * Prints out battle results
+     */
     public void run()
     {        
         createArmy(army1);
@@ -44,10 +55,9 @@ public class BattleMain
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Populates the army ArraLists with random creatures
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param army - which ArrayList to populate
      */
     public void createArmy(ArrayList army)
     {
@@ -81,6 +91,12 @@ public class BattleMain
         }        
     }
     
+    /**
+     * Method for 2 armies to battle
+     * @return String - The results of the battle
+     * @param army1 - First army for battle
+     * @param army2 - Second army for battle
+     */
     public String battle(ArrayList<Creature> army1, ArrayList<Creature> army2)
     {
         int index1 = 0;
@@ -108,11 +124,12 @@ public class BattleMain
                 army1BattlesWon ++;
                 if(index2 == army2.size() -1)
                 {
-                    winner = "Army 1 is the winner";
+                    winner = "*Army 1 is the winner*";
                 }
                 index2 ++;
             }
         }
-        return "Army 1 battles won: " + army1BattlesWon + "\nArmy 2 battles won: " + army2BattlesWon + "\n" + winner;
+        return "\nArmy 1 battles won: " + army1BattlesWon + "\nArmy 2 battles won: " + army2BattlesWon + "\n\n" +
+               "**********************\n" + winner + "\n**********************";
     }
 }

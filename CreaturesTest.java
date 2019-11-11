@@ -8,8 +8,8 @@ import org.junit.Test;
 /**
  * The test class CreaturesTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @author  (Erik Cooke)
+ * @version (2019.11.7)
  */
 public class CreaturesTest
 {
@@ -59,6 +59,11 @@ public class CreaturesTest
         Human human1 = new Human();
         human1.damage();
     }
+
+    @Test
+    public void TestMain()
+    {
+        BattleMain battleMa2 = new BattleMain();
+        battleMa2.run();
+    }
 }
-
-

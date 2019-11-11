@@ -1,4 +1,3 @@
-
 /**
  * Cyberdemon, min strength 20-max strength 40, min hp 25-max hp 100.
  *
@@ -7,7 +6,6 @@
  */
 public class Cyberdemon extends Demon
 {
-    // instance variables - replace the example below with your own
     private static final int MIN_CYBERDEMON_STR = 20;
     private static final int MAX_CYBERDEMON_STR = 40;
     private static final int MIN_CYBERDEMON_HP = 25;

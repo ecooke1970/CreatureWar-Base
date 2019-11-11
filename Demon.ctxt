@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=Demon
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Demon\ here.\r\n\r\n\ @author\ (Erik\ Cooke)\r\n\ @version\ (2019.11.05)\r\n
+comment0.text=\r\n\ Demon,\ 5%\ chance\ to\ do\ magic\ damage(+50)\r\n\r\n\ @author\ (Erik\ Cooke)\r\n\ @version\ (2019.11.05)\r\n
 comment1.params=
 comment1.target=Demon()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Demon\r\n
 comment2.params=str\ hp
 comment2.target=Demon(int,\ int)
-comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Demon\r\n
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Demon\r\n\ @param\ str\ -\ number\ to\ set\ str\ to\r\n\ @param\ hp\ -\ number\ to\ set\ hp\ to\r\n
 comment3.params=
 comment3.target=int\ damage()
-comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @return\ int\ amount\ of\ damage\ inflicted.\r\n
+comment3.text=\r\n\ Demon\ damage\ generator.\ 5%\ chance\ to\ do\ magical\ damage,\ +50\ to\ damage.\r\n\ \r\n\ @return\ int\ amount\ of\ damage\ inflicted.\r\n
 numComments=4

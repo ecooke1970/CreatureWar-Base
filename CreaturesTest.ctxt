@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CreaturesTest
-comment0.text=\r\n\ The\ test\ class\ CreaturesTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ test\ class\ CreaturesTest.\r\n\r\n\ @author\ \ (Erik\ Cooke)\r\n\ @version\ (2019.11.7)\r\n
 comment1.params=
 comment1.target=CreaturesTest()
 comment1.text=\r\n\ Default\ constructor\ for\ test\ class\ CreaturesTest\r\n
@@ -14,4 +14,6 @@ comment4.params=
 comment4.target=void\ ConstructorTests()
 comment5.params=
 comment5.target=void\ TestDamage()
-numComments=6
+comment6.params=
+comment6.target=void\ TestMain()
+numComments=7
