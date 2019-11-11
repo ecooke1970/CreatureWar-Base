@@ -1,5 +1,3 @@
-
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -43,7 +41,6 @@ public class CreaturesTest
     @Test
     public void ConstructorTests()
     {
-        Creature creature1 = new Creature();
         Human human1 = new Human();
         Elf elf1 = new Elf();
         Demon demon1 = new Demon();
@@ -54,8 +51,6 @@ public class CreaturesTest
     @Test
     public void TestDamage()
     {
-        Creature creature1 = new Creature();
-        creature1.damage();
         Human human1 = new Human();
         human1.damage();
     }
@@ -67,3 +62,4 @@ public class CreaturesTest
         battleMa2.run();
     }
 }
+

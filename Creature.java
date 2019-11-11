@@ -6,7 +6,7 @@ import java.util.Random;
  * @author (Erik Cooke) 
  * @version (2019.11.05)
  */
-public class Creature
+public abstract class Creature
 {
    private int hp;
    protected int strength;
