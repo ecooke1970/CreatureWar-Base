@@ -12,15 +12,20 @@ public class Elf extends Creature
     private static final int MIN_ELF_HP = 10;
     private static final int MAX_ELF_HP = 30;
 
-    /**
-     * Constructor for objects of class Elf
-     */
+    // /**
+     // * Constructor for objects of class Elf
+     // */
+    // public Elf()
+    // {
+        // super(
+            // Randomizer.nextInt(MAX_ELF_STR - MIN_ELF_STR + 1) + MIN_ELF_STR,
+            // Randomizer.nextInt(MAX_ELF_HP - MIN_ELF_HP + 1) + MIN_ELF_HP
+            // );
+    // }
+    
     public Elf()
     {
-        super(
-            Randomizer.nextInt(MAX_ELF_STR - MIN_ELF_STR + 1) + MIN_ELF_STR,
-            Randomizer.nextInt(MAX_ELF_HP - MIN_ELF_HP + 1) + MIN_ELF_HP
-            );
+        super(MIN_ELF_STR, MAX_ELF_STR, MIN_ELF_HP, MAX_ELF_HP);
     }
     
     /**

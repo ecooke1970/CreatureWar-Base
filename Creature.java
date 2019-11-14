@@ -9,14 +9,15 @@ import java.util.Random;
 public abstract class Creature
 {
    private int hp;
-   private int strength;
+   private int str;
+   private Randomizer rand;
    
    /**
     * Constructor for the class Creature
     */
    public Creature(){
        hp = 10;
-       strength = 10;
+       str = 10;
    }   
    
    /**
@@ -24,13 +25,13 @@ public abstract class Creature
     * @param strength amount to set strength to
     * @param hp amount to set hp to
     */
-   public Creature(int strength, int hp)
+   public Creature(int str, int hp)
    {
-       if(strength >= 5){
-           this.strength = strength;
+       if(str >= 5){
+           this.str = str;
        }
        else{
-            this.strength = 5;
+            this.str = 5;
        }
        if(hp >= 5){
             this.hp = hp;
@@ -40,12 +41,26 @@ public abstract class Creature
        }
     }
     
+    /**
+     * Constuctor for Creature taking int for max str, min str, min hp, and max hp
+     * @param minStr minimum strength for this creature
+     * @param maxStr maximum strength for this creature
+     * @param minHp minimum health points for this creature
+     * @param maxHp maximum health points for this creature
+     */
+    public Creature(int minStr, int maxStr, int minHp, int maxHp)
+    {
+        rand = new Randomizer();
+        this.str = rand.nextInt(maxStr - minStr + 1) + minStr;
+        this.hp = rand.nextInt(maxHp - minHp + 1) + minHp;
+    }
+    
    /**
     * How much damage
     * @return int - the amount of damage this creature inflicted
     */
    public int damage(){
-       return Randomizer.nextInt(strength) + 1;
+       return rand.nextInt(str) + 1;
    }
    
    /**
