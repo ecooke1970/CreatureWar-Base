@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=HumanArcher
+comment0.text=\r\n\ HumanArcher,\ min\ strength\ 5-max\ strength\ 18,\ min\ hp\ 5-max\ hp\ 30\r\n\r\n\ @author\ (Erik\ Cooke)\r\n\ @version\ (2019.11.05)\r\n
+comment1.params=
+comment1.target=HumanArcher()
+comment1.text=\r\n\ \r\n
+comment2.params=
+comment2.target=int\ damage()
+comment2.text=\r\n\ HumanArcher\ damage\ generator.\r\n\ 20%\ chance\ to\ cause\ double\ damage\r\n
+numComments=3

@@ -41,17 +41,9 @@ public class CreaturesTest
     @Test
     public void ConstructorTests()
     {
-        Human human1 = new Human();
         Elf elf1 = new Elf();
         Cyberdemon cyberdem1 = new Cyberdemon();
         Balrog balrog1 = new Balrog();
-    }
-
-    @Test
-    public void TestDamage()
-    {
-        Human human1 = new Human();
-        human1.damage();
     }
 
     @Test

@@ -12,13 +12,13 @@ public abstract class Creature
    private int str;
    private Randomizer rand;
    
-   /**
-    * Constructor for the class Creature
-    */
-   public Creature(){
-       hp = 10;
-       str = 10;
-   }   
+   // /**
+    // * Constructor for the class Creature
+    // */
+   // public Creature(){
+       // hp = 10;
+       // str = 10;
+   // }   
    
    /**
     * Constructor for Creature taking int for strength and hit points
@@ -50,7 +50,6 @@ public abstract class Creature
      */
     public Creature(int minStr, int maxStr, int minHp, int maxHp)
     {
-        rand = new Randomizer();
         this.str = rand.nextInt(maxStr - minStr + 1) + minStr;
         this.hp = rand.nextInt(maxHp - minHp + 1) + minHp;
     }

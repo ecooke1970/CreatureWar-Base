@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=Demon
 comment0.text=\r\n\ Demon,\ 5%\ chance\ to\ do\ magic\ damage(+50)\r\n\r\n\ @author\ (Erik\ Cooke)\r\n\ @version\ (2019.11.05)\r\n
-comment1.params=
-comment1.target=Demon()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Demon\r\n
-comment2.params=str\ hp
-comment2.target=Demon(int,\ int)
-comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Demon\r\n\ @param\ str\ -\ number\ to\ set\ str\ to\r\n\ @param\ hp\ -\ number\ to\ set\ hp\ to\r\n
+comment1.params=str\ hp
+comment1.target=Demon(int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Demon\r\n\ @param\ str\ -\ number\ to\ set\ str\ to\r\n\ @param\ hp\ -\ number\ to\ set\ hp\ to\r\n
+comment2.params=minStr\ maxStr\ minHp\ maxHp
+comment2.target=Demon(int,\ int,\ int,\ int)
+comment2.text=\r\n\ \r\n
 comment3.params=
 comment3.target=int\ damage()
 comment3.text=\r\n\ Demon\ damage\ generator.\ 5%\ chance\ to\ do\ magical\ damage,\ +50\ to\ damage.\r\n\ \r\n\ @return\ int\ amount\ of\ damage\ inflicted.\r\n

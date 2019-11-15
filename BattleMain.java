@@ -69,7 +69,7 @@ public class BattleMain
             switch(x){
                 
                 case 0:
-                    army.add(new Human());
+                    army.add(new HumanArcher());
                     break;
                     
                 case 1:

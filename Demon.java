@@ -6,13 +6,13 @@
  */
 public abstract class Demon extends Creature
 {
-    /**
-     * Constructor for objects of class Demon
-     */
-    public Demon()
-    {
-        super();
-    }
+    // /**
+     // * Constructor for objects of class Demon
+     // */
+    // public Demon()
+    // {
+        // super();
+    // }
     
     /**
      * Constructor for objects of class Demon
@@ -22,6 +22,14 @@ public abstract class Demon extends Creature
     public Demon(int str, int hp)
     {
         super(str, hp);
+    }
+    
+    /**
+     * 
+     */
+    public Demon(int minStr, int maxStr, int minHp, int maxHp)
+    {
+        super(minStr, maxStr, minHp, maxHp);
     }
 
     /**
